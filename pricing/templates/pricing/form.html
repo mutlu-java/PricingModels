@@ -1,0 +1,26 @@
+<form method="post">
+    {% csrf_token %}
+    <label for="option_type">Option Type:</label>
+    <select name="option_type" id="option_type">
+      <option value="call">Call</option>
+      <option value="put">Put</option>
+    </select><br>
+  
+    <label for="stock_price">Stock Price:</label>
+    <input type="text" id="stock_price" name="stock_price"><br>
+  
+    <label for="strike_price">Strike Price:</label>
+    <input type="text" id="strike_price" name="strike_price"><br>
+  
+    <label for="time_to_maturity">Time to Maturity (in years):</label>
+    <input type="text" id="time_to_maturity" name="time_to_maturity"><br>
+  
+    <label for="risk_free_rate">Risk-Free Rate:</label>
+    <input type="text" id="risk_free_rate" name="risk_free_rate"><br>
+  
+    <label for="volatility">Volatility:</label>
+    <input type="text" id="volatility" name="volatility"><br>
+  
+    <button type="submit">Calculate Price</button>
+  </form>
+  
